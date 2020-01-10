@@ -1,19 +1,19 @@
-var assert = require('chai').assert;
-var Candy = require('../lib/candy');
+let assert = require('chai').assert;
+let Candy = require('../lib/candy');
 
 describe('Candy', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Candy);
   });
 
-  it.skip('should have a type', function () {
-    var candy = new Candy('Skittles');
+  it('should have a type', function () {
+    let candy = new Candy('Skittles');
     assert.equal(candy.type, 'Skittles');
   });
 
-  it.skip('should have another candy type', function () {
-    var candy = new Candy('Mars');
+  it('should have another candy type', function () {
+    let candy = new Candy('Mars');
     assert.equal(candy.type, 'Mars');
   });
 });

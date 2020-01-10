@@ -1,5 +1,5 @@
-var assert = require('chai').assert;
-var Unicorn = require('../exercises/unicorn');
+let assert = require('chai').assert;
+let Unicorn = require('../exercises/unicorn');
 
 describe('Unicorn', function() {
 
