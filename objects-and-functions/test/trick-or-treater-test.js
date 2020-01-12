@@ -1,8 +1,8 @@
-var assert = require('chai').assert;
-var Costume = require('../lib/costume');
-var Bag = require('../lib/bag');
-var Candy = require('../lib/candy');
-var TrickOrTreater = require('../lib/trick-or-treater');
+const assert = require('chai').assert;
+const Costume = require('../lib/costume');
+const Bag = require('../lib/bag');
+const Candy = require('../lib/candy');
+let TrickOrTreater = require('../lib/trick-or-treater');
 
 describe('TrickOrTreater', function () {
 
@@ -10,10 +10,9 @@ describe('TrickOrTreater', function () {
     assert.isFunction(TrickOrTreater);
   });
 
-  it.skip('should wear a costume', function () {
-
-    var costume = new Costume('Cowboy');
-    var trickOrTreater = new TrickOrTreater(costume);
+  it('should wear a costume', function () {
+    let costume = new Costume('Cowboy');
+    let trickOrTreater = new TrickOrTreater(costume);
     assert.equal(trickOrTreater.dressedUpAs, 'Cowboy');
   });
 

@@ -1,19 +1,19 @@
-var assert = require('chai').assert;
-var Costume = require('../lib/costume')
+let assert = require('chai').assert;
+let Costume = require('../lib/costume');
 
 describe('Costume', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Costume);
   });
 
-  it.skip('should have a style', function () {
-    var costume = new Costume('Batman');
+  it('should have a style', function () {
+    let costume = new Costume('Batman');
     assert.equal(costume.style, 'Batman');
   });
 
-  it.skip('should have another style of costume', function() {
-    var costume = new Costume('Princess');
+  it('should have another style of costume', function() {
+    let costume = new Costume('Princess');
     assert.equal(costume.style, 'Princess');
   });
 });
