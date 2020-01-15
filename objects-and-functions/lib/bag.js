@@ -12,8 +12,15 @@ class Bag {
 
      contains(type){
         for (let i=0; i<this.candies.length ; i++) {
-            return this.candies[i].type == type;
+            return this.candies[i].type === type;
         }
+     }
+
+     isBagEmpty(){
+        if(this.candies.length>0){
+            this.empty=false;
+        }
+        return this.empty
      }
 }
 

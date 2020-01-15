@@ -1,5 +1,5 @@
-let assert = require('chai').assert;
-let Costume = require('../lib/costume');
+const assert = require('chai').assert;
+const Costume = require('../lib/costume');
 
 describe('Costume', function () {
 
@@ -8,12 +8,12 @@ describe('Costume', function () {
   });
 
   it('should have a style', function () {
-    let costume = new Costume('Batman');
+    const costume = new Costume('Batman');
     assert.equal(costume.style, 'Batman');
   });
 
   it('should have another style of costume', function() {
-    let costume = new Costume('Princess');
+    const costume = new Costume('Princess');
     assert.equal(costume.style, 'Princess');
   });
 });

@@ -13,32 +13,32 @@ describe('Bag', function () {
   })
 
   it('should count candies in an empty bag', function () {
-    let bag = new Bag();
+    const bag = new Bag();
     assert.equal(bag.count, 0);
   });
 
   it('should check the bag has no candy', function () {
-    let bag = new Bag();
+    const bag = new Bag();
     assert.deepEqual(bag.candies, []);
   });
 
   it('should put candy in the bag', function () {
-    let bag = new Bag();
-    let candy = new Candy('Swedish Fish');
+    const bag = new Bag();
+    const candy = new Candy('Swedish Fish');
     bag.fill(candy);
     assert.deepEqual(bag.candies, [candy]);
   });
 
   it('should count the candies in the bag', function() {
-    let bag = new Bag();
-    let candy = new Candy('Turkish Delight');
+    const bag = new Bag();
+    const candy = new Candy('Turkish Delight');
     bag.fill(candy);
     assert.equal(bag.count, 1);
   });
 
   it('should contain candies and candies should have a type', function () {
-    let bag = new Bag();
-    let candy = new Candy('Hershey\'s Kisses');
+    const bag = new Bag();
+    const candy = new Candy('Hershey\'s Kisses');
     bag.fill(candy);
     type = bag.candies[0].type;
     assert.equal(type, 'Hershey\'s Kisses');

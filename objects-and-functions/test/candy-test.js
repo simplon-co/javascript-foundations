@@ -1,5 +1,5 @@
-let assert = require('chai').assert;
-let Candy = require('../lib/candy');
+const assert = require('chai').assert;
+const Candy = require('../lib/candy');
 
 describe('Candy', function () {
 
@@ -8,12 +8,12 @@ describe('Candy', function () {
   });
 
   it('should have a type', function () {
-    let candy = new Candy('Skittles');
+    const candy = new Candy('Skittles');
     assert.equal(candy.type, 'Skittles');
   });
 
   it('should have another candy type', function () {
-    let candy = new Candy('Mars');
+    const candy = new Candy('Mars');
     assert.equal(candy.type, 'Mars');
   });
 });
